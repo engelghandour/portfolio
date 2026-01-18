@@ -66,13 +66,14 @@ export default function About() {
               <div className="w-full h-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-2 flex items-center justify-center">
                 {/* Replace the placeholder below with your actual photo */}
                 {/* Uncomment and update the path to use your photo: */}
-                {/* <Image 
+                 <Image 
                   src="/images/profile.jpg" 
                   alt="Profile Photo" 
                   width={320}
                   height={320}
                   className="w-full h-full object-cover rounded-xl"
-                /> */}
+                  style={{ objectPosition: 'top' }}
+                /> 
                 
                 {/* Placeholder - remove this when you add your photo */}
                 <div className="w-full h-full bg-white dark:bg-slate-800 rounded-xl flex items-center justify-center text-gray-400 dark:text-gray-600">
