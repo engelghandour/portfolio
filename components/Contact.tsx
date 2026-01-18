@@ -3,8 +3,9 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import {
-  FiMail, FiGithub, FiLinkedin, FiTwitter, FiSend, FiCheck, FiX
+import emailjs from '@emailjs/browser';
+
+import { FiMail, FiGithub, FiLinkedin, FiTwitter, FiSend, FiCheck, FiX
 } from 'react-icons/fi';
 
 export default function Contact() {
@@ -58,6 +59,31 @@ export default function Contact() {
     setFormStatus('sending');
     
     // TODO: Replace with actual EmailJS implementation
+    try {
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        publicKey
+      );
+      setFormStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+
+      setTimeout(() => {
+        setFormStatus('idle');
+      }, 5000);
+    } catch (error) {
+      setFormStatus('error');
+    }
     // Example:
     // import emailjs from '@emailjs/browser';
     // emailjs.send(serviceId, templateId, formData, publicKey)
@@ -65,14 +91,14 @@ export default function Contact() {
     //   .catch(() => setFormStatus('error'));
     
     // Simulate form submission (replace with actual EmailJS or API call)
-    setTimeout(() => {
-      setFormStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+    // setTimeout(() => {
+    //   setFormStatus('success');
+    //   setFormData({ name: '', email: '', subject: '', message: '' });
       
-      setTimeout(() => {
-        setFormStatus('idle');
-      }, 5000);
-    }, 2000);
+    //   setTimeout(() => {
+    //     setFormStatus('idle');
+    //   }, 5000);
+    // }, 2000);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -90,10 +116,10 @@ export default function Contact() {
   };
 
   const socialLinks = [
-    { icon: FiGithub, url: 'https://github.com', label: 'GitHub' },
-    { icon: FiLinkedin, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FiTwitter, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: FiMail, url: 'mailto:your.email@example.com', label: 'Email' },
+    { icon: FiGithub, url: 'https://github.com/engelghandour', label: 'GitHub' },
+    { icon: FiLinkedin, url: 'https://linkedin.com/in/engelghandour', label: 'LinkedIn' },
+    { icon: FiTwitter, url: 'https://twitter.com/engelghandour', label: 'Twitter' },
+    { icon: FiMail, url: 'mailto:your.engelghandour@icloud.com', label: 'Email' },
   ];
 
   return (
@@ -183,8 +209,8 @@ export default function Contact() {
             >
               <div className="flex items-center gap-3 text-gray-600 dark:text-gray-400">
                 <FiMail size={20} />
-                <a href="mailto:your.email@example.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  your.email@example.com
+                <a href="mailto:engelghandour@icloud.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  engelghandour@icloud.com
                 </a>
               </div>
               <div className="text-sm text-gray-500 dark:text-gray-500">
