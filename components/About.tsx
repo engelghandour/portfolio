@@ -76,13 +76,13 @@ export default function About() {
                 /> 
                 
                 {/* Placeholder - remove this when you add your photo */}
-                <div className="w-full h-full bg-white dark:bg-slate-800 rounded-xl flex items-center justify-center text-gray-400 dark:text-gray-600">
+                {/* <div className="w-full h-full bg-white dark:bg-slate-800 rounded-xl flex items-center justify-center text-gray-400 dark:text-gray-600">
                   <div className="text-center">
                     <div className="text-6xl mb-4">👨‍💻</div>
                     <p className="text-sm">Add your photo to</p>
                     <p className="text-sm font-semibold">/public/images/profile.jpg</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           </motion.div>
