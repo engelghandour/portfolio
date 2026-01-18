@@ -33,7 +33,7 @@ A modern, professional portfolio website showcasing business-focused software de
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/engelghandour/portfolio.git
+git clone https://github.com/your-username/portfolio.git
 cd portfolio
 ```
 

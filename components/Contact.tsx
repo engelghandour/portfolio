@@ -57,6 +57,13 @@ export default function Contact() {
     
     setFormStatus('sending');
     
+    // TODO: Replace with actual EmailJS implementation
+    // Example:
+    // import emailjs from '@emailjs/browser';
+    // emailjs.send(serviceId, templateId, formData, publicKey)
+    //   .then(() => setFormStatus('success'))
+    //   .catch(() => setFormStatus('error'));
+    
     // Simulate form submission (replace with actual EmailJS or API call)
     setTimeout(() => {
       setFormStatus('success');
