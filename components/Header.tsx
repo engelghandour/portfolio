@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FiMenu, FiX, FiSun, FiMoon } from 'react-icons/fi';
+import Image from 'next/image';
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -86,9 +87,12 @@ export default function Header() {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+            className="flex items-center gap-3"
           >
-            Portfolio
+            {/* Replace with your logo image: <Image src="/images/logo.png" alt="Logo" width={40} height={40} className="rounded-lg" /> */}
+            <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Your Name
+            </div>
           </motion.div>
 
           {/* Desktop Navigation */}

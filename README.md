@@ -58,16 +58,55 @@ npm start
 
 ## 🎨 Customization
 
+### Adding Your Photo and Logo
+
+#### Profile Photo
+1. Add your professional photo to `/public/images/profile.jpg`
+2. In `components/About.tsx`, uncomment the Image component (lines ~73-78)
+3. Remove or comment out the placeholder div (lines ~81-89)
+4. Recommended image size: 400x400px or larger (square aspect ratio)
+
+#### Logo
+1. **Option 1: Use an image logo**
+   - Add your logo to `/public/images/logo.png`
+   - In `components/Header.tsx` (line ~90), uncomment the Image component
+   - Remove the text-based logo div
+
+2. **Option 2: Use text-based logo**
+   - In `components/Header.tsx` (line ~93), replace "Your Name" with your name or brand
+
+#### Example:
+```jsx
+// For image logo (in Header.tsx)
+<Image 
+  src="/images/logo.png" 
+  alt="Your Name" 
+  width={40} 
+  height={40} 
+  className="rounded-lg" 
+/>
+
+// For profile photo (in About.tsx)
+<Image 
+  src="/images/profile.jpg" 
+  alt="Profile Photo" 
+  width={320}
+  height={320}
+  className="w-full h-full object-cover rounded-xl"
+/>
+```
+
 ### Personal Information
 
 Update the following files with your information:
 
 1. **app/layout.tsx** - Update metadata (title, description, author)
-2. **components/Hero.tsx** - Change the headline and tagline
-3. **components/About.tsx** - Update the about text and differentiators
-4. **components/Skills.tsx** - Modify skills and proficiency levels
-5. **components/Projects.tsx** - Replace with your actual projects
-6. **components/Contact.tsx** - Update email and social media links
+2. **components/Header.tsx** - Add your logo/name
+3. **components/Hero.tsx** - Change the headline and tagline
+4. **components/About.tsx** - Update the about text, add your photo
+5. **components/Skills.tsx** - Modify skills and proficiency levels
+6. **components/Projects.tsx** - Replace with your actual projects
+7. **components/Contact.tsx** - Update email and social media links
 7. **components/Footer.tsx** - Update name and links
 
 ### Images

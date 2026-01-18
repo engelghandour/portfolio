@@ -27,7 +27,7 @@ export default function Footer() {
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4"
             >
-              Portfolio
+              Your Name
             </motion.h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Building digital solutions that drive business value. 
