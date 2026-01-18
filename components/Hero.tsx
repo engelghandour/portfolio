@@ -115,11 +115,14 @@ export default function Hero() {
             Transforming Business Challenges into Digital Solutions
           </motion.p>
 
+            {/* Add spacing between buttons and the scroll indicator */}
+          <div className="h-12" />
+          
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4"
           >
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(59, 130, 246, 0.3)' }}
@@ -144,6 +147,7 @@ export default function Hero() {
             >
               Contact Me
             </motion.button>
+            
           </motion.div>
         </motion.div>
 
@@ -153,15 +157,15 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2"
-        >
-          <motion.button
-            onClick={scrollToAbout}
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            <FiArrowDown size={32} />
-          </motion.button>
+        > 
+            <motion.button
+              onClick={scrollToAbout}
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors mb-10"
+            >
+              <FiArrowDown size={32} className="mb-6" />
+            </motion.button>
         </motion.div>
       </div>
     </section>

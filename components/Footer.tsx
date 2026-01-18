@@ -27,7 +27,7 @@ export default function Footer() {
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4"
             >
-              Your Name
+              Mohamed Elghandour
             </motion.h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Building digital solutions that drive business value. 
@@ -66,7 +66,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors text-sm"
               >
                 <FiMail size={16} />
-                your.email@example.com
+                engelghandour@icloud.com
               </a>
               <div className="flex gap-4 mt-4">
                 {socialLinks.map((social, index) => (
@@ -92,7 +92,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm flex items-center gap-2">
-              © {currentYear} Portfolio. Made with <FiHeart className="text-red-500" size={16} /> by Your Name
+              © {currentYear} Portfolio. Made with <FiHeart className="text-red-500" size={16} /> by Mohamed Elghandour
             </p>
             <motion.button
               onClick={scrollToTop}

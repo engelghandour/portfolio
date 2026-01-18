@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Full-Stack Developer | Business Solutions through Technology",
   description: "Professional portfolio of a Full-Stack Developer & Software Engineer specializing in transforming business challenges into digital solutions.",
   keywords: ["Full-Stack Developer", "Software Engineer", "Web Development", "Business Solutions", "React", "Next.js", "TypeScript"],
-  authors: [{ name: "Your Name" }],
+  authors: [{ name: "Mohamed Elghandour" }],
   openGraph: {
     title: "Full-Stack Developer | Business Solutions through Technology",
     description: "Transforming Business Challenges into Digital Solutions",
