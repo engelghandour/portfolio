@@ -61,27 +61,29 @@ export default function About() {
             <motion.div
               whileHover={{ scale: 1.05, rotate: 2 }}
               transition={{ duration: 0.3 }}
-              className="relative w-80 h-80 rounded-2xl overflow-hidden shadow-2xl"
+              className="relative w-80 h-80 shadow-2xl"
             >
-              <div className="w-full h-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-2 flex items-center justify-center">
-                {/* Replace the placeholder below with your actual photo */}
-                {/* Uncomment and update the path to use your photo: */}
-                 <Image 
-                  src="/images/profile.jpg" 
-                  alt="Profile Photo" 
-                  width={320}
-                  height={320}
-                  className="w-full h-full object-cover rounded-xl"
-                />
-                
-                {/* Placeholder - remove this when you add your photo */}
-                {/* <div className="w-full h-full bg-white dark:bg-slate-800 rounded-xl flex items-center justify-center text-gray-400 dark:text-gray-600">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">👨‍💻</div>
-                    <p className="text-sm">Add your photo to</p>
-                    <p className="text-sm font-semibold">/public/images/profile.jpg</p>
-                  </div>
-                </div> */}
+              <div className="w-full h-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-[2px] rounded-2xl">
+                <div className="w-full h-full overflow-hidden rounded-2xl bg-white dark:bg-slate-800">
+                  {/* Replace the placeholder below with your actual photo */}
+                  {/* Uncomment and update the path to use your photo: */}
+                  <Image 
+                    src="/images/profile.jpg" 
+                    alt="Profile Photo" 
+                    width={320}
+                    height={320}
+                    className="w-full h-full object-contain"
+                  />
+                  
+                  {/* Placeholder - remove this when you add your photo */}
+                  {/* <div className="w-full h-full bg-white dark:bg-slate-800 flex items-center justify-center text-gray-400 dark:text-gray-600">
+                    <div className="text-center">
+                      <div className="text-6xl mb-4">👨‍💻</div>
+                      <p className="text-sm">Add your photo to</p>
+                      <p className="text-sm font-semibold">/public/images/profile.jpg</p>
+                    </div>
+                  </div> */}
+                </div>
               </div>
             </motion.div>
           </motion.div>
