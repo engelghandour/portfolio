@@ -47,7 +47,7 @@ const projects = [
     solution: 'Self-service portal with mobile app for account management and support',
     impact: '70% reduction in support calls, 95% customer satisfaction, 50K+ active users',
     tech: ['React Native', 'Next.js', 'Python', 'AWS Lambda', 'DynamoDB'],
-    image: '📱',
+    image: '📱0',
     liveUrl: '#',
     githubUrl: '#',
   },
