@@ -35,8 +35,7 @@ const projects = [
     solution: 'Developed unified API gateway with automated sync and error handling',
     impact: '99.9% uptime, 90% reduction in data errors, 20 hours/week saved in manual work',
     tech: ['Node.js', 'Express', 'RabbitMQ', 'Docker', 'Kubernetes'],
-    image: 'image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80'
-',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80',
     liveUrl: '#',
     githubUrl: '#',
   },
