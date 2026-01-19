@@ -24,7 +24,7 @@ const projects = [
     solution: 'Built interactive dashboard with live data streaming and customizable widgets',
     impact: '80% faster decision-making, 50% reduction in manual reporting, used by 200+ users',
     tech: ['React', 'D3.js', 'WebSocket', 'GraphQL', 'MongoDB'],
-    image: '📊',
+    image: 'https://picsum.photos/800/600',
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -35,7 +35,8 @@ const projects = [
     solution: 'Developed unified API gateway with automated sync and error handling',
     impact: '99.9% uptime, 90% reduction in data errors, 20 hours/week saved in manual work',
     tech: ['Node.js', 'Express', 'RabbitMQ', 'Docker', 'Kubernetes'],
-    image: '🔌',
+    image: 'image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80'
+',
     liveUrl: '#',
     githubUrl: '#',
   },
