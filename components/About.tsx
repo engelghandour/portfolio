@@ -64,7 +64,7 @@ export default function About() {
               className="relative w-80 h-80 shadow-2xl"
             >
               <div className="w-full h-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-[2px] rounded-2xl">
-                <div className="w-full h-full overflow-hidden rounded-2xl">
+                <div className="w-full h-full overflow-hidden rounded-2xl bg-white dark:bg-slate-800">
                   {/* Replace the placeholder below with your actual photo */}
                   {/* Uncomment and update the path to use your photo: */}
                   <Image 
@@ -72,7 +72,7 @@ export default function About() {
                     alt="Profile Photo" 
                     width={320}
                     height={320}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                   
                   {/* Placeholder - remove this when you add your photo */}
