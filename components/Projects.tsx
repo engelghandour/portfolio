@@ -13,7 +13,7 @@ const projects = [
     solution: 'Rebuilt with Next.js, Node.js, and PostgreSQL with optimized checkout flow',
     impact: '65% reduction in cart abandonment, 3x faster page loads, $2M additional annual revenue',
     tech: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'AWS'],
-    image: '🛒',
+    image: 'https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/home/10-1.jpg',
     liveUrl: '#',
     githubUrl: '#',
   },
