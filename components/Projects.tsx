@@ -15,7 +15,7 @@ const projects = [
     tech: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'AWS'],
     image:(
       <img
-        src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/home/10-1.jpg"
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
         alt="E-Commerce Platform"
         className="object-cover w-full h-full"
       />
@@ -32,7 +32,7 @@ const projects = [
     tech: ['React', 'D3.js', 'WebSocket', 'GraphQL', 'MongoDB'],
     image:(
       <img
-        src="https://picsum.photos/800/600"
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
         alt="Business stakeholders lacked visibility into real-time operational metrics"
         className="object-cover w-full h-full"
       />
