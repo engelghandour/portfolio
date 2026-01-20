@@ -15,7 +15,7 @@ const projects = [
     tech: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'AWS'],
     image:(
       <img
-        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
+        src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"
         alt="E-Commerce Platform"
         className="object-cover w-full h-full"
       />
@@ -24,7 +24,7 @@ const projects = [
     githubUrl: '#',
   },
   {
-    title: 'Real-Time Analytics Dashboard',
+    title:  'Real-Time Analytics Dashboard',
     category: 'Frontend',
     problem: 'Business stakeholders lacked visibility into real-time operational metrics',
     solution: 'Built interactive dashboard with live data streaming and customizable widgets',
@@ -32,8 +32,8 @@ const projects = [
     tech: ['React', 'D3.js', 'WebSocket', 'GraphQL', 'MongoDB'],
     image:(
       <img
-        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
-        alt="Business stakeholders lacked visibility into real-time operational metrics"
+        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+        alt="Real-Time Analytics Dashboard"
         className="object-cover w-full h-full"
       />
     ),
@@ -44,12 +44,12 @@ const projects = [
     title: 'API Integration Platform',
     category: 'Backend',
     problem: 'Manual data sync between 15+ systems causing errors and delays',
-    solution: 'Developed unified API gateway with automated sync and error handling',
+    solution:  'Developed unified API gateway with automated sync and error handling',
     impact: '99.9% uptime, 90% reduction in data errors, 20 hours/week saved in manual work',
     tech: ['Node.js', 'Express', 'RabbitMQ', 'Docker', 'Kubernetes'],
     image:(
       <img
-        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
+        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80"
         alt="API Integration Platform"
         className="object-cover w-full h-full"
       />
@@ -62,20 +62,32 @@ const projects = [
     category: 'Full-Stack',
     problem: 'Customers calling support for basic account management tasks',
     solution: 'Self-service portal with mobile app for account management and support',
-    impact: '70% reduction in support calls, 95% customer satisfaction, 50K+ active users',
+    impact:  '70% reduction in support calls, 95% customer satisfaction, 50K+ active users',
     tech: ['React Native', 'Next.js', 'Python', 'AWS Lambda', 'DynamoDB'],
-    image: '📱',
+    image:(
+      <img
+        src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80"
+        alt="Customer Portal & Mobile App"
+        className="object-cover w-full h-full"
+      />
+    ),
     liveUrl: '#',
     githubUrl: '#',
   },
   {
     title: 'DevOps Pipeline Automation',
     category: 'DevOps',
-    problem: 'Manual deployment process taking 4+ hours with frequent rollbacks',
+    problem:  'Manual deployment process taking 4+ hours with frequent rollbacks',
     solution: 'Automated CI/CD pipeline with testing, staging, and zero-downtime deployments',
     impact: 'Deployments reduced to 15 minutes, 85% fewer production incidents, 10x release frequency',
     tech: ['Jenkins', 'Docker', 'Kubernetes', 'Terraform', 'AWS'],
-    image: '⚙️',
+    image:(
+      <img
+        src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&q=80"
+        alt="DevOps Pipeline Automation"
+        className="object-cover w-full h-full"
+      />
+    ),
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -86,12 +98,17 @@ const projects = [
     solution: 'ETL pipeline and BI dashboard aggregating data from multiple sources',
     impact: 'Single source of truth for metrics, 60% faster reporting, strategic insights enabled',
     tech: ['Python', 'Apache Airflow', 'PostgreSQL', 'Vue.js', 'Tableau'],
-    image: '📈',
+    image:(
+      <img
+        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+        alt="Business Intelligence System"
+        className="object-cover w-full h-full"
+      />
+    ),
     liveUrl: '#',
     githubUrl: '#',
   },
 ];
-
 const categories = ['All', 'Full-Stack', 'Frontend', 'Backend', 'DevOps'];
 
 export default function Projects() {
