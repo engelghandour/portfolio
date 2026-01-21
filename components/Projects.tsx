@@ -9,8 +9,7 @@ const projects = [
     {
     title: 'Asseddiq American Schhol LMS',
     category: 'Full-Stack',
-    problem: 'Lack of a centralized system to track student performance and academic data efficiently.
-',
+    problem: 'Lack of a centralized system to track student performance and academic data efficiently.',
     solution: 'Built a custom LMS that centralizes academic data and delivers clear, actionable insights',
     impact: '65% reduction in cart abandonment, 3x faster page loads, $2M additional annual revenue',
     tech: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'AWS'],
@@ -27,8 +26,7 @@ const projects = [
     {
     title: 'ATC Academy',
     category: 'Full-Stack',
-    problem: 'Managing courses, students, and financial operations across multiple systems caused inefficiency and lack of visibility.
-',
+    problem: 'Managing courses, students, and financial operations across multiple systems caused inefficiency and lack of visibility.',
     solution: 'Developed an all-in-one LMS that manages courses, students, and finances with centralized control and real-time insights.',
     impact: '65% reduction in cart abandonment, 3x faster page loads, $2M additional annual revenue',
     tech: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'AWS' , 'React'],
@@ -42,7 +40,6 @@ const projects = [
     liveUrl: '#',
     githubUrl: '#',
   },
-  
   {
     title: 'E-Commerce Platform Modernization',
     category: 'Full-Stack',
