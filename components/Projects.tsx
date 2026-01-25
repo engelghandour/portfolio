@@ -15,8 +15,8 @@ const projects = [
     tech: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'AWS'],
     image:(
       <img
-        src="./public/images/Screenshot asseddiq.png"
-        alt="E-Commerce Platform"
+        src="./public/images/Screenshotasseddiq.png"
+        alt="Asseddiq School"
         className="object-cover w-full h-full"
       />
     ),
@@ -32,8 +32,8 @@ const projects = [
     tech: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'AWS' , 'React'],
     image:(
       <img
-        src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"
-        alt="E-Commerce Platform"
+        src="./public/images/atclogo.png"
+        alt="ATC Academy"
         className="object-cover w-full h-full"
       />
     ),
