@@ -15,7 +15,7 @@ const projects = [
     tech: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'AWS'],
     image:(
       <img
-        src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"
+        src="./public/images/Screenshot asseddiq.png"
         alt="E-Commerce Platform"
         className="object-cover w-full h-full"
       />
