@@ -15,7 +15,7 @@ const projects = [
     tech: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'AWS'],
     image:(
       <img
-        src="/public/images/Screenshotasseddiq.png"
+        src="/images/Screenshotasseddiq.png"
         alt="Asseddiq School"
         className="object-cover w-full h-full"
       />
@@ -32,7 +32,7 @@ const projects = [
     tech: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'AWS' , 'React'],
     image:(
       <img
-        src="/public/images/atclogo.png"
+        src="/images/atclogo.png"
         alt="ATC Academy"
         className="object-cover w-full h-full"
       />
